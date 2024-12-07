@@ -285,10 +285,10 @@
 
 
 /*** Team ***/
-.team-item {
-    margin-left: 0; /* Adjust this value as needed */
-    padding-left: 0; /* Adjust this value as needed */
+.container {
+    margin-left: -20px; /* Move the section to the left by 20px */
 }
+
 
 .team-item:hover img {
     transform: scale(1.1);
