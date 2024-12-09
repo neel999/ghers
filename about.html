@@ -7,42 +7,58 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet"> <!-- Example of a Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
 
     <title>من نحن ؟</title>
 
     <style>
+
         body {
+
             margin: 0;
+
             padding: 0;
-            height: 100vh;
+
             background-image: url('img/background.jpg'); /* Replace with your image URL */
+
             background-size: cover; /* Cover the entire viewport */
+
             background-position: center; /* Center the image */
+
             color: black; /* Text color */
+
             display: flex; /* Use flexbox for centering */
+
             justify-content: center; /* Center horizontally */
+
             align-items: center; /* Center vertically */
+
             text-align: center; /* Center text */
-             font-family: 'Amiri', serif; /* استخدام خط مخصص */
+
+            font-family: 'Amiri', serif; /* استخدام خط مخصص */
+
+            padding: 20px; /* Add padding to the body */
+
+            box-sizing: border-box; /* Include padding in width/height calculations */
+
         }
+
         .text-container {
 
             background-color: rgba(0, 0, 0, 0.7); /* خلفية شبه شفافة */
 
             padding: 20px; /* إضافة حشوة */
-            
-            overflow-y: auto; /* Enable vertical scrolling */
 
             border-radius: 10px; /* زوايا دائرية */
 
-            width: 300px; /* Set a width for the container */
+            width: 100%; /* Full width */
 
-            height: 200px; /* Set a fixed height for the container */
-
-            max-width: 90%; /* الحد الأقصى لعرض الحاوية */
+            max-width: 800px; /* Maximum width for larger screens */
 
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* ظل للحاوية */
+
+            overflow: hidden; /* Hide overflow */
 
         }
 
@@ -66,21 +82,7 @@
 
         }
 
-        @media (max-width: 600px) {
-
-            h1 {
-
-                font-size: 2em; /* حجم العنوان على الشاشات الصغيرة */
-
-            }
-
-            p {
-
-                font-size: 1em; /* حجم الفقرة على الشاشات الصغيرة */
-
-            }
-
-            .back-link {
+        .back-link {
 
             display: inline-block; /* جعل الرابط كتلة */
 
@@ -105,11 +107,30 @@
             background-color: rgba(255, 255, 255, 0.5); /* تغيير الخلفية عند التمرير */
 
         }
-        
+
+        @media (max-width: 600px) {
+
+            h1 {
+
+                font-size: 2em; /* حجم العنوان على الشاشات الصغيرة */
+
+            }
+
+            p {
+
+                font-size: 1em; /* حجم الفقرة على الشاشات الصغيرة */
+
+            }
+
+        }
+
     </style>
+
 </head>
+
 <body>
-    <div>
+
+    <div class="text-container">
         <h1>مرحبا بكم في منصة غرس التعليمية</h1>
         <p>من نحن ؟
 
