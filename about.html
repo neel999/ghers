@@ -23,13 +23,56 @@
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
             text-align: center; /* Center text */
+             font-family: 'Amiri', serif; /* استخدام خط مخصص */
         }
+        .text-container {
+
+            background-color: rgba(0, 0, 0, 0.7); /* خلفية شبه شفافة */
+
+            padding: 20px; /* إضافة حشوة */
+
+            border-radius: 10px; /* زوايا دائرية */
+
+            max-width: 90%; /* الحد الأقصى لعرض الحاوية */
+
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* ظل للحاوية */
+
+        }
+
         h1 {
-            font-size: 3em; /* Heading size */
-            margin: 0; /* Remove default margin */
+
+            font-size: 2.5em; /* حجم العنوان */
+
+            margin: 0; /* إزالة الهوامش الافتراضية */
+
+            line-height: 1.2; /* ارتفاع السطر */
+
         }
+
         p {
-            font-size: 1.5em; /* Paragraph size */
+
+            font-size: 1.2em; /* حجم الفقرة */
+
+            line-height: 1.5; /* ارتفاع السطر */
+
+            margin: 10px 0; /* هوامش الفقرة */
+
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+
+                font-size: 2em; /* حجم العنوان على الشاشات الصغيرة */
+
+            }
+
+            p {
+
+                font-size: 1em; /* حجم الفقرة على الشاشات الصغيرة */
+
+            }
+
         }
     </style>
 </head>
