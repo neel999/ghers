@@ -312,7 +312,7 @@
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
+    left: -20px; /* Move to the left by 20px */
     height: 100%;
     width: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
@@ -323,13 +323,12 @@
     position: absolute;
     content: "";
     top: 0;
-    right: 0;
+    right: -20px; /* Move to the left by 20px */
     height: 100%;
     width: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
-
 @media (min-width: 768px) {
     .testimonial-carousel::before,
     .testimonial-carousel::after {
