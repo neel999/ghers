@@ -308,13 +308,18 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.testimonial-carousel {
+    position: relative; /* Ensure the parent is positioned */
+    overflow: hidden; /* Hide overflow to prevent pseudo-elements from showing outside */
+}
+
 .testimonial-carousel::before {
     position: absolute;
     content: "";
     top: 0;
-    left: -20px; /* Move to the left by 20px */
+    left: -50px; /* Move to the left by 50px */
     height: 100%;
-    width: 50px;
+    width: 50px; /* Adjust width as needed */
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
@@ -323,9 +328,9 @@
     position: absolute;
     content: "";
     top: 0;
-    right: -20px; /* Move to the left by 20px */
+    right: -50px; /* Move to the left by 50px */
     height: 100%;
-    width: 50px;
+    width: 50px; /* Adjust width as needed */
     background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
