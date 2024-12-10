@@ -309,17 +309,16 @@
 }
 
 .testimonial-carousel {
-
-    position: relative; /* This makes the carousel the reference point for absolute positioning */
-
-    overflow: hidden; /* Prevents overflow of the pseudo-elements */
-
+    position: relative; /* Establishes a positioning context */
+    overflow: hidden; /* Prevents overflow of pseudo-elements */
     width: 100%; /* Set the width of the carousel */
-
     height: 300px; /* Set a height for the carousel */
-
     background-color: #f9f9f9; /* Background color for visibility */
+}
 
+.testimonial {
+    position: relative; /* Ensure testimonials are positioned correctly */
+    z-index: 2; /* Ensure testimonials appear above the pseudo-elements */
 }
 
 .testimonial-carousel::before {
@@ -328,9 +327,9 @@
     top: 0;
     left: -50px; /* Move to the left by 50px */
     height: 100%;
-    width: 50px; /* Adjust width as needed */
+    width: 50px; /* Width of the gradient overlay */
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
+    z-index: 1; /* Ensure it appears below the testimonials */
 }
 
 .testimonial-carousel::after {
@@ -339,9 +338,9 @@
     top: 0;
     right: -50px; /* Move to the left by 50px */
     height: 100%;
-    width: 50px; /* Adjust width as needed */
+    width: 50px; /* Width of the gradient overlay */
     background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    z-index: 1;
+    z-index: 1; /* Ensure it appears below the testimonials */
 }
 @media (min-width: 768px) {
     .testimonial-carousel::before,
