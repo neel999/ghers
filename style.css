@@ -309,8 +309,17 @@
 }
 
 .testimonial-carousel {
-    position: relative; /* Ensure the parent is positioned */
-    overflow: hidden; /* Hide overflow to prevent pseudo-elements from showing outside */
+
+    position: relative; /* This makes the carousel the reference point for absolute positioning */
+
+    overflow: hidden; /* Prevents overflow of the pseudo-elements */
+
+    width: 100%; /* Set the width of the carousel */
+
+    height: 300px; /* Set a height for the carousel */
+
+    background-color: #f9f9f9; /* Background color for visibility */
+
 }
 
 .testimonial-carousel::before {
