@@ -314,7 +314,7 @@
     top: 0;
     left: -20px; /* Move to the left by 20px */
     height: 100%;
-    width: 0;
+    width: 50px;
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
@@ -325,7 +325,7 @@
     top: 0;
     right: -20px; /* Move to the left by 20px */
     height: 100%;
-    width: 0;
+    width: 50px;
     background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
