@@ -299,6 +299,10 @@
 
 
 /*** Testimonial ***/
+.rtl {
+    direction: rtl;
+}
+
 .testimonial-carousel::before {
     position: absolute;
     content: "";
